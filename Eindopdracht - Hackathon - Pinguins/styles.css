@@ -41,16 +41,25 @@ nav {
     position: fixed;
     top:0;
     grid-area:n;
+    z-index: 999;
 }
 
-.menu-mob {
+.menu-mob  {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: row;
+    padding:15px 0px;
+}
+.menu-desktop  {
     display:none;
 }
 
 header {
+    display:block;
     background-image:url('images/background.jpg');
     background-size:cover;
-    background-position: center center;
+    background-position: left;
     text-align:center;
     grid-area:h;
 }
@@ -60,6 +69,8 @@ header {
 }
 
 .intro {
+    width:100%;
+    padding:200px 0 380px 0;
     background-color:rgba(0,0,0,0.35);
 }
 
@@ -69,6 +80,9 @@ header {
 }
 
 .intro-alt {
+    width:100%;
+    height:65%;
+    padding:20% 0;
     background-color:rgba(0,0,0,0.35);
 }
 
@@ -199,9 +213,9 @@ label {
 }
 
 .widget-wrapper {
-    width:100%;
-    padding:10px;
-    background:#3B4B65;
+    width: 96%;
+    padding: 10px;
+    background: #3B4B65;
 }
 
 .widget-wrapper ul li {
@@ -209,8 +223,8 @@ label {
 }
 
 .widget-area {
-    padding:10px;
-    width:100%;
+    padding: 10px;
+    width: 95%;
 }
 
 .col-1 {
@@ -326,54 +340,6 @@ box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.20);
 }
 
 /* MEDIA QUERIES */
-
-/* MOBILE */
-
-@media (max-width:599px) {
-    .menu-desktop  {
-        display:none !important;
-    }
-
-    .menu-mob  {
-        display:flex;
-        justify-content: space-around;
-        align-items:center;
-        flex-direction: row;
-        padding:15px 0px;
-    }
-
-    .intro {
-        width:100%;
-        padding:200px 0 380px 0;
-    }
-
-    .intro-alt {
-        width:100%;
-        height:65%;
-        padding:20% 0;
-    }
-
-    header {
-        display:block;
-        background-image:url('images/background.jpg');
-        background-size:cover;
-        background-position: left;
-        text-align:center;
-        grid-area:h;
-    }
-
-    .widget-wrapper {
-        width: 96%;
-        padding: 10px;
-        background: #3B4B65;
-    }
-
-    .widget-area {
-        padding: 10px;
-        width: 95%;
-    }
-}
-
 
 @media (min-width:600px) {
     .site-wrapper {
@@ -574,7 +540,6 @@ box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.20);
 
     .widget-wrapper {
         width:98.5%;
-        padding: 40px 100px;
         background:#3B4B65;
     }
     
