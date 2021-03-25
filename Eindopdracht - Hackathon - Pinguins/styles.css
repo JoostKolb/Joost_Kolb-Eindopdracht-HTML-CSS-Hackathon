@@ -213,9 +213,10 @@ label {
 }
 
 .widget-wrapper {
-    width: 96%;
     padding: 10px;
     background: #3B4B65;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .widget-wrapper ul li {
@@ -394,7 +395,7 @@ box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.20);
     }
 
     .widget-wrapper {
-        width:97%;
+        width:100%;
         display:flex;
     }
 
@@ -539,7 +540,7 @@ box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.20);
     }
 
     .widget-wrapper {
-        width:98.5%;
+        width:100%;
         background:#3B4B65;
     }
     
